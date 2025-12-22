@@ -106,10 +106,16 @@ En sí, cualquier escenario que se desee usar en gazebo debe de ser agregado en 
 Luego, se debe de añadir las carpetas de los modelos dentro de gazebo. Cada una de las carpetad models, por ejemplo `aws_robomaker_residential_AirconditionerA_01`, debe ser agregado en la carpta models dentro de gazebo, la ruta de esa carpeta, en mi caso, es  `~/.gazebo/models`, con ello, también se debe de incluir en esta ruta la carpeta `photos` obtenidas a partir del zip del repositorio de small_house.
 Con estos cambios ya es posible realizar la simulación del robot en este escenario.
 
+### Prueba de mapeo
+Luego de hacer todos estos cambios anteriormente mencionados, el resultado del mapping en el mundo `small_house` fue el siguiente:
+<div style="display: flex; gap: 50px;">
+  <img src="unitree-go2-ros2/robots/configs/go2_config/maps/mapeo1.pgm" width="350" /> 
+</div>
+
 ## Aspectos a tener en cuenta
 Estos son algunos de los inconvenientes que se presentan al momento de probar la simulación:
 * En algunas ocasiones, al momento de lanzar la simulación, gazebo se cierra inesperadamente, por lo que se debe de terminar el proceso y volver a lanzarlo.
 * En ocasiones, al momento de lanzar gazebo, se presenta el robot "acostado" en el suelo, la forma de corregir esto es cerrando el proceso y volver a lanzar la simulación. Si el error persiste, la forma de corregirlo (al menos la que yo probé) es reiniciar la computadora.
 * La simulación en gazebo puede ser algo pesada, si se presentan problemas de rendimiento, se pude desactivar las sombras en el apartado de `Scene` en la opción `shadows`.
-* Cuando se inicia la simulación es posible ver al robot deslizarse por el suelo sin motivo aparante, es probable que en algún momento se haya cambiado un parametro que haga que surja este problema, la forma de solucionarlo (por lo que he probado) es cambiar, dentro de la opción de `Physics`, los parametros `real time update rate` y `max step size` a 200 y 0,005, respectivamente. Con ello el robot dejará de deslizarse, sin embargo, esto ocasiona problemas con algunas de las estructuras del escenario, tal como movimientos repetidos o la desaparación de estos objetos de la escena (no he encontrado solución a ese problema pero no altera el funcionamiento de la simulación).
+* Cuando se inicia la simulación es posible ver al robot deslizarse por el suelo sin motivo aparante, es probable que en algún momento se haya cambiado un parametro que haga que surja este problema, la forma de solucionarlo (por lo que he probado) es cambiar, dentro de la opción de `Physics`, los parametros `real time update rate` y `max step size` a 200 y 0,005, respectivamente. Con ello el robot dejará de deslizarse, sin embargo, esto ocasiona problemas con algunas de las estructuras del escenario, tal como movimientos repetidos o la desaparación de estos objetos de la escena (no encontré solución a ese problema pero no altera el funcionamiento de la simulación).
 
