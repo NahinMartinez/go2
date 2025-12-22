@@ -108,8 +108,15 @@ Con estos cambios ya es posible realizar la simulación del robot en este escena
 
 ### Prueba de mapeo
 Luego de hacer todos estos cambios anteriormente mencionados, el resultado del mapping en el mundo `small_house` fue el siguiente:
+
+#### Resulatados del mapping
 <div style="display: flex; gap: 50px;">
   <img src=".docs/mapeo1.png" width="350" /> 
+</div>
+
+#### Vista superior del escenario small_house
+<div style="display: flex; gap: 50px;">
+  <img src=".docs/small_house.png" width="350" /> 
 </div>
 
 ## Aspectos a tener en cuenta
