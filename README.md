@@ -109,7 +109,7 @@ Con estos cambios ya es posible realizar la simulación del robot en este escena
 ### Prueba de mapeo
 Luego de hacer todos estos cambios anteriormente mencionados, el resultado del mapping en el mundo `small_house` fue el siguiente:
 <div style="display: flex; gap: 50px;">
-  <img src="unitree-go2-ros2/robots/configs/go2_config/maps/mapeo1.pgm" width="350" /> 
+  <img src=".docs/mapeo1.png" width="350" /> 
 </div>
 
 ## Aspectos a tener en cuenta
