@@ -2,7 +2,7 @@
 
 ## Repositorio del robot go2 usado
 En este apartado se explica los pasos realizados para que, a partir del repositorio de anujjain-dev, se pueda integrar correctamente la función de mapeo de SLAM toolbox. La versión de Ros usada en este repositorio es HUMBLE.
-A continuación se comparte el link del repositorio de [anujjain](https://github.com/anujjain-dev/unitree-go2-ros2). El archivo README del repositorio original está incluido dentro de la carpeta `unitree-go2-ros2`
+A continuación se comparte el link del repositorio de [anujjain](https://github.com/anujjain-dev/unitree-go2-ros2). El archivo README del repositorio original está incluido dentro de la carpeta `unitree-go2-ros2`.
 Recuerde también de descargar SLAM toolbox.
 
 ## Cambios a realizar para emplear SLAM
